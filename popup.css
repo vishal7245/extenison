@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+.container {
+  padding: 1rem 0.5rem;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#linksList {
+  padding-left: 0;
+}
+
+.video-link {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px 0;
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--light-color);
+}
+
+.video-link:last-child {
+  border-bottom: none;
+}
+
+.video-link > a:visited,
+.video-link > a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: var(--light-color);
+  font-size: 12px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 100ms, box-shadow 100ms;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

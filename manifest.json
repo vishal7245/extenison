@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Gajni YT",
+    "version": "1.0",
+    "description": "Remembers your last 15 YouTube videos",
+    "icons": {
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ]
+  }
+  
